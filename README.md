@@ -16,10 +16,10 @@ How can explicit norm and safety representations improve decision reliability in
 
 To address this question, the study explores the following sub-questions:
 
-How should traffic rules be represented symbolically?
-How should conflicts between safety and legality be resolved?
-Can structured reasoning reduce unsafe or illegal proposals?
-Does explicit constraint checking improve consistency?
+* How should traffic rules be represented symbolically?
+* How should conflicts between safety and legality be resolved?
+* Can structured reasoning reduce unsafe or illegal proposals?
+* Does explicit constraint checking improve consistency?
 
 ---
 
