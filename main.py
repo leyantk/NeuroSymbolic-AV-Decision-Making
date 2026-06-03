@@ -421,6 +421,7 @@ Read the scenario, evaluate the physical geometry to prune impossible actions, e
 OUTPUT FORMAT:
 Output your response strictly as a JSON object. Do not add markdown blocks or conversational text outside the brackets.
 {
+    "chain_of_thought": {
         "spatial_reasoning": "Analyze the static road geometry to distinguish between PHYSICAL barriers (curbs, walls, road edges) and LEGAL boundaries (lane lines). RULE: ONLY exclude actions blocked by PHYSICAL barriers. If you are in the rightmost lane or on a 1-lane road, 'Go right' hits the physical road edge (physically impossible). However, crossing double-yellow lines to the left is physically possible (though illegal), so 'Go left' must remain available. Left turns from a left-turn lane are also physically possible. What actions must be excluded purely due to physics?",
         "rule_compliance": "Identify which Safety Constraints or Traffic Laws are violated by each physically possible action. Explicitly cite the Tiers or Rules from your definitions.",
         "conflict_detection": "Identify the primary conflict (e.g., Tier 1 vs. Tier 2, or a multi-actor dilemma). Is a collision or law violation unavoidable?",
